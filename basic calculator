@@ -24,8 +24,8 @@ if(op == '+'){
     result = num1 / num2;
 }
 else {
-    std::cout << "Operator invalid" << std::endl;
-}
+    std::cout << "Invalid Operator" << std::endl;
+};
   std::cout << result << std::endl;
   return 0; 
 }
