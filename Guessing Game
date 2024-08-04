@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int secretNum = 9;
+    int guess;
+    int guessCount = 0;
+    int guessLimit = 3;
+    bool OutofGuesses = false;
+    
+    while(guess != secretNum && !OutofGuesses){
+        if(guessCount < guessLimit){
+            std::cout << "Enter Guess: " << std::endl;
+            std::cin >> guess;
+            guessCount++;
+        } else{
+        OutofGuesses = true;
+        }
+    }
+    
+    if(OutofGuesses){
+        std::cout << "You Lose!" << std::endl;
+    } else{
+    std::cout << "You Win!" << std::endl;
+    }
+  return 0; 
+}
